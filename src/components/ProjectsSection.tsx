@@ -23,7 +23,7 @@ const projects: Project[] = [
   {
     title: "Cognis",
     tagline: "Real-Time ML Diagnostic Engine",
-    type: "Logic Lens / Personal",
+    type: "AI/ML Integration",
     stack: ["Python", "LightGBM", "FastAPI", "scikit-learn", "NumPy"],
     live: "https://harisawan246-cognis.hf.space/dashboard",
     github: "https://github.com/Harismehd/Cognis",
@@ -38,7 +38,7 @@ const projects: Project[] = [
   {
     title: "Logic Lens",
     tagline: "Socratic Python Learning IDE",
-    type: "Personal",
+    type: "AI Platform",
     stack: ["React 18", "Monaco Editor", "Pyodide", "FastAPI"],
     live: "https://harisawan246-logiclens.hf.space/",
     github: "https://github.com/Harismehd/LogicLens",
@@ -53,7 +53,7 @@ const projects: Project[] = [
   {
     title: "Nexora",
     tagline: "Enterprise Gym Management SaaS",
-    type: "Personal",
+    type: "SaaS Platform",
     stack: ["Node.js", "React", "PostgreSQL", "WebSocket", "Supabase"],
     live: "https://gymflowbyharis.vercel.app/",
     details: [
@@ -67,7 +67,7 @@ const projects: Project[] = [
   {
     title: "Lens Assist Pro",
     tagline: "Real-Time Remote Support Platform",
-    type: "Personal",
+    type: "Real-Time Systems",
     stack: ["Node.js", "WebRTC", "Socket.io", "Tesseract.js"],
     github: "https://github.com/Harismehd/Lens-Assist-Pro",
     details: [
@@ -79,7 +79,7 @@ const projects: Project[] = [
   {
     title: "NexusShield",
     tagline: "Open-Source Cybersecurity Tool",
-    type: "Personal",
+    type: "Cybersecurity",
     stack: ["Full-stack"],
     github: "https://github.com/Harismehd/NexusShield",
     details: [
@@ -91,7 +91,7 @@ const projects: Project[] = [
   {
     title: "CivicConnect",
     tagline: "Smart City Resident Services Portal",
-    type: "Personal",
+    type: "Web Portal",
     stack: ["Next.js 15", "TypeScript", "Supabase", "Groq", "Leaflet.js"],
     live: "https://civicconnect-indol.vercel.app",
     github: "https://github.com/Harismehd/civicconnect",
@@ -108,7 +108,7 @@ const projects: Project[] = [
   {
     title: "ForgeFit",
     tagline: "Structured Fitness Tracking & Workout Management",
-    type: "Personal",
+    type: "SaaS Platform",
     stack: ["Next.js 15", "TypeScript", "Prisma", "PostgreSQL", "Zustand"],
     github: "https://github.com/Harismehd/ForgeFit",
     details: [
@@ -124,7 +124,7 @@ const projects: Project[] = [
   {
     title: "Emaanfit",
     tagline: "AI-Driven Full-Stack Fitness Platform",
-    type: "Personal",
+    type: "AI Platform",
     stack: ["PHP", "MySQL", "AI-Powered", "Meal Planning", "Responsive UI"],
     details: [
       "Full-stack fitness web app built with PHP and MySQL featuring AI-driven meal planning and workout tracking.",
@@ -189,7 +189,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         transition={{ delay: index * 0.05 }}
         whileHover={{ y: -8, transition: { duration: 0.2 } }}
         onClick={() => setIsOpen(true)}
-        className="glass-card p-6 flex flex-col h-full justify-between group hover:border-primary/40 hover:glow-cyan transition-all duration-300 cursor-pointer"
+        className="glass-card p-6 flex flex-col h-full justify-between group hover:border-primary/40 hover:glow-orange transition-all duration-300 cursor-pointer"
       >
         <div>
           <div className="flex items-center justify-between gap-4 mb-3">

@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const roles = ["Full-Stack Developer", "SaaS Architect", "Real-Time Systems Engineer", "Exploring AI & ML"];
+const roles = [
+  "Software Engineering",
+  "Production-Ready MVPs",
+  "Custom AI & ML Integration",
+  "Scalable SaaS Architectures",
+  "Autonomous Agentic Workflows"
+];
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -73,18 +79,18 @@ const HeroSection = () => {
               className="absolute inset-0 -z-10 blur-xl"
               animate={{
                 background: [
-                  "linear-gradient(90deg, #00d4ff 0%, #0066ff 100%)",
-                  "linear-gradient(90deg, #0066ff 0%, #a855f7 100%)",
-                  "linear-gradient(90deg, #a855f7 0%, #00d4ff 100%)",
+                  "linear-gradient(90deg, #ff3d00 0%, #ff9000 100%)",
+                  "linear-gradient(90deg, #ff9000 0%, #ffc400 100%)",
+                  "linear-gradient(90deg, #ffc400 0%, #ff3d00 100%)",
                 ],
               }}
               transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
               style={{ opacity: 0.3 }}
             />
-
+ 
             {/* Main text with shimmer effect */}
             <motion.span
-              className="font-mono text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500"
+              className="font-mono text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-500"
               animate={{
                 backgroundPosition: ["0% center", "200% center"],
               }}
@@ -95,18 +101,18 @@ const HeroSection = () => {
             >
               {displayText}
             </motion.span>
-
+ 
             {/* Advanced cursor with glow */}
             <motion.span
               className="ml-1 inline-block relative"
               animate={{ opacity: [1, 0] }}
               transition={{ duration: 0.8, repeat: Infinity }}
             >
-              <span className="text-cyan-400 font-bold text-2xl md:text-3xl">▎</span>
+              <span className="text-orange-500 font-bold text-2xl md:text-3xl">▎</span>
               <motion.div
                 className="absolute inset-0 rounded-full blur-md"
                 style={{
-                  background: "radial-gradient(circle, rgba(0, 212, 255, 0.4), transparent)",
+                  background: "radial-gradient(circle, rgba(255, 95, 0, 0.4), transparent)",
                   width: "30px",
                   height: "30px",
                   left: "-5px",
@@ -119,14 +125,14 @@ const HeroSection = () => {
                 transition={{ duration: 0.6, repeat: Infinity }}
               />
             </motion.span>
-
+ 
             {/* Particle effects on role change */}
             {displayText.length === roles[roleIndex].length && (
               <>
                 {[...Array(8)].map((_, i) => (
                   <motion.div
                     key={i}
-                    className="absolute w-2 h-2 bg-cyan-400 rounded-full pointer-events-none"
+                    className="absolute w-2 h-2 bg-orange-500 rounded-full pointer-events-none"
                     initial={{
                       x: 0,
                       y: 0,
@@ -152,7 +158,7 @@ const HeroSection = () => {
             )}
           </div>
         </motion.div>
-
+ 
         {/* Role indicator dots */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -164,7 +170,7 @@ const HeroSection = () => {
             <motion.div
               key={i}
               className={`h-1.5 rounded-full ${
-                i === roleIndex ? "bg-cyan-400" : "bg-muted-foreground/30"
+                i === roleIndex ? "bg-orange-500" : "bg-muted-foreground/30"
               }`}
               animate={{
                 width: i === roleIndex ? 24 : 8,

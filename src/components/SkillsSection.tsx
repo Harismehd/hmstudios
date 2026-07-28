@@ -30,7 +30,7 @@ const SkillsSection = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
               whileHover={{ y: -4, scale: 1.03 }}
-              className="glass-card px-5 py-6 text-center cursor-default group hover:border-primary/40 transition-all duration-300 hover:glow-cyan"
+              className="glass-card px-5 py-6 text-center cursor-default group hover:border-primary/40 transition-all duration-300 hover:glow-orange"
             >
               <span className="text-sm md:text-base font-medium text-foreground group-hover:text-gradient transition-all">
                 {skill}

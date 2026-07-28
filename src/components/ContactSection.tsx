@@ -6,8 +6,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "nbook0911@gmail.com",
-      href: "mailto:nbook0911@gmail.com",
+      value: "hmstudios.tech@gmail.com",
+      href: "mailto:hmstudios.tech@gmail.com",
       description: "Drop me an email for collaboration or inquiries",
       color: "from-red-500/20 to-pink-500/20",
     },
@@ -17,7 +17,7 @@ const ContactSection = () => {
       value: "HMSTUDIOS",
       href: "https://www.linkedin.com/in/haris-mehmood-b07790335/",
       description: "Connect with me on LinkedIn",
-      color: "from-blue-500/20 to-cyan-500/20",
+      color: "from-orange-500/10 to-amber-500/10",
     },
     {
       icon: Github,
@@ -58,7 +58,7 @@ const ContactSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`group glass-card p-6 hover:border-primary/50 hover:glow-cyan transition-all duration-500 cursor-pointer bg-gradient-to-br ${color}`}
+              className={`group glass-card p-6 hover:border-primary/50 hover:glow-orange transition-all duration-500 cursor-pointer bg-gradient-to-br ${color}`}
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -95,7 +95,7 @@ const ContactSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:nbook0911@gmail.com"
+              href="mailto:hmstudios.tech@gmail.com"
               className="glow-btn bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:scale-105 transition-transform"
             >
               <Mail size={18} /> Send an Email

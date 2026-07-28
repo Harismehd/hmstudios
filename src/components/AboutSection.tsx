@@ -23,7 +23,7 @@ const AboutSection = () => {
             transition={{ duration: 0.6 }}
             className="relative shrink-0"
           >
-            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-primary/30 glow-cyan">
+            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-primary/30 glow-orange">
               <img
                 src={hmstudiosLogo}
                 alt="HMSTUDIOS"
@@ -64,7 +64,7 @@ const AboutSection = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 glow-cyan"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-orange-500/50 glow-orange"
             >
               <FileText className="w-5 h-5" />
               Download CV
